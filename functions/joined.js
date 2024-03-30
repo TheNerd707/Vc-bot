@@ -30,14 +30,16 @@ module.exports = async function joined(newState, oldState, client) {
             name1 = "Traffic Stop"; // Assign value based on condition
           } else if (data.type === "scene") {
             name1 = "Scene"; // Assign value based on condition
-          }
+          } else if (data.type === 'mod') {
+            name1 = "Mod Scene"; // Assign value based on condition
+        }
 
           const i = data.index + 1;
           // Create the new channel with the determined name
           const newChannel = await guild.channels.create({
             name: name1 + " " + i,
             type: ChannelType.GuildVoice,
-            parent: client.channels.cache.get("1091518774953377895"),
+            parent: client.channels.cache.get("1167859693323030558"),
             position: client.channels.cache.get(data.channelId).rawPosition,
           });
 

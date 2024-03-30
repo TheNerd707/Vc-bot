@@ -4,9 +4,10 @@ const ChannelModel = require('./../schemas/channels');
 
 module.exports = async function start(client) {
   const channelsData = [
-    { type: "civ", channelId: "1222980432950202510" },
-    { type: "ts", channelId: "1223445584774434936" },
-    { type: "scene", channelId: "1223445624247029860" }
+    { type: "civ", channelId: "1223506760514535424" },
+    { type: "ts", channelId: "1223506580364988559" },
+    { type: "scene", channelId: "1223506586551451659" },
+    { type: "mod", channelId: "1167871715368521818" }
     // Add more channels if needed
   ];
 
